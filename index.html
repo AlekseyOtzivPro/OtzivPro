@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Алексей ОтзыПро</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f0c29;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #00dbde;
+            font-size: 2.5rem;
+        }
+        button {
+            background: linear-gradient(45deg, #00dbde, #fc00ff);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            cursor: pointer;
+            margin: 20px;
+        }
+        .bio {
+            display: none;
+            text-align: left;
+            background: rgba(0,0,0,0.3);
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+        .link {
+            display: block;
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Алексей ОтзыПро</h1>
+        <p>Эксперт SMM и цифрового продвижения</p>
+        
+        <button onclick="toggleBio()">BIO</button>
+        
+        <div id="bioContent" class="bio">
+            <h2>Эксперт в области SMM и цифрового продвижения</h2>
+            <p>Специализируюсь на комплексных решениях для повышения видимости, управлении репутацией и создании социального доказательства для бизнеса.</p>
+            <p>Всегда в доступе: актуальные тарифы, условия и примеры выполненной работы.</p>
+            
+            <h3>Для сотрудничества и связи:</h3>
+            <a class="link" href="http://t.me/Fastreviews_bot" target="_blank">Telegram-бот</a>
+            
+            <h3>Инфоканал с ценами и примерами:</h3>
+            <a class="link" href="https://t.me/+hy94Y_gPfRU0YzVi" target="_blank">Канал с тарифами</a>
+            
+            <h3>Канал с моей репутацией:</h3>
+            <a class="link" href="https://t.me/+yEs-9YuPkJxiZGQy" target="_blank">Отзывы</a>
+            
+            <h3>Быстрый заказ:</h3>
+            <a class="link" href="https://t.me/sqawis" target="_blank">Написать лично</a>
+        </div>
+    </div>
+    
+    <script>
+        function toggleBio() {
+            const bio = document.getElementById('bioContent');
+            const btn = document.querySelector('button');
+            
+            if (bio.style.display === 'block') {
+                bio.style.display = 'none';
+                btn.textContent = 'BIO';
+            } else {
+                bio.style.display = 'block';
+                btn.textContent = 'Скрыть BIO';
+            }
+        }
+    </script>
+</body>
+</html>
